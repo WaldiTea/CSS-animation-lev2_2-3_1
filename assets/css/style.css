@@ -1,0 +1,111 @@
+h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+/*---------- lev2_2 ----------*/
+/*############################*/
+
+.single-container {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ball {
+  background: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+}
+
+.single-ball {
+  animation: swing 4s infinite 1s;
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    top: 0;
+    left: 0;
+    background: red;
+  }
+
+  25% {
+    top: 0;
+    left: 95%;
+    background: yellow;
+  }
+
+  50% {
+    top: 75%;
+    left: 95%;
+    background: green;
+  }
+
+  75% {
+    top: 75%;
+    left: 0;
+    background: blue;
+  }
+}
+
+/*---------- lev3_1 ----------*/
+/*############################*/
+
+.quad-container {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ball1 {
+  animation: quartet 4s infinite 1s;
+}
+
+.ball2 {
+  animation: quartet 4s infinite 2s;
+}
+
+.ball3 {
+  animation: quartet 4s infinite 3s;
+}
+
+.ball4 {
+  animation: quartet 4s infinite 4s;
+}
+
+@keyframes quartet {
+  0%,
+  100% {
+    top: 0;
+    left: 0;
+    background: red;
+  }
+
+  25% {
+    top: 0;
+    left: 95%;
+    background: yellow;
+  }
+
+  50% {
+    top: 75%;
+    left: 95%;
+    background: green;
+  }
+
+  75% {
+    top: 75%;
+    left: 0;
+    background: blue;
+  }
+}
